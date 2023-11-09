@@ -1,0 +1,202 @@
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+html {
+    font-family: Agbalumo, Lato, Verdana, Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+
+nav {
+    background-color: #943a20;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    color: floralwhite;
+    font-size: 4rem;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    background-color: #943a20;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav img {
+    width: 20%;
+    height: auto;
+    margin-left: 1%;
+}
+
+li {
+    flex-grow: 1;
+    text-align: center; /* Center the text within each list item */
+    /* Add margin and padding to create space around each list item */
+    margin-left: 1rem;
+    padding-left: 1rem;
+    /* Adjust the width and height of the list items */
+    width: 80px; /* You can adjust this as needed */
+    height: 3rem;
+}
+
+li a {
+    background-color: #943a20;
+    color: floralwhite;
+    width: 100%;
+    height: 3rem;
+    display: block;
+    text-align: center;
+    line-height: 3rem;
+    text-decoration: none;
+    transition: background-color 1s;
+}
+
+li a:hover {
+    background-color: rgba(255, 250, 240, 0.3);
+}
+
+
+header {
+    background-color: #3b2824;
+    padding: 3rem 1rem 1rem 1rem;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+header img {
+    padding-bottom: 2rem;
+}
+
+header p {
+    font-family: Lato, sans-serif;
+    text-align: center;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    padding-bottom: 10rem;
+    color: floralwhite;
+}
+
+main {
+    background-color: #3b2824;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h3 {
+    padding-top: 1rem;
+    color:  #3b2824;
+    text-align: center;
+    font-weight: 20;
+}
+
+
+article {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #a89074;
+    margin: 1rem;
+}
+
+
+figure {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.4rem;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+figcaption {
+    font-family: Lato, sans-serif;
+    text-align: left;
+    color:  #3b2824;
+    font-style: italic;
+    font-size: 0.7rem;
+}
+
+article p {
+    font-family: Lato, sans-serif;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 2rem;
+    text-align: left;
+    color:  #3b2824;
+}
+
+
+footer {
+    font-family: Lato, sans-serif;
+    background-color: #943a20;
+    padding: 1rem 1rem 20rem 1rem;
+    position: relative;
+    color: floralwhite;
+}
+
+footer h3 {
+    font-family: Agbalumo, sans-serif;
+    text-align: left;
+    color: floralwhite;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+footer p {
+    font-family: Lato, sans-serif;
+    text-align: left;
+    margin: 0.2rem;
+    font-style: italic;
+}
+
+footer img {
+    width: 40%;
+    position: absolute;
+    top: 20%;
+    right: 5%;
+}
+
+
+@media screen and (min-width: 769px) {
+    .container {
+        width: 80%;
+    }
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    article {
+        width: calc(33.33% - 2rem);
+        margin: 1rem;
+    }
+
+    li {
+        width: 10rem;
+    }
+
+}
